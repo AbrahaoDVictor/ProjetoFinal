@@ -1,9 +1,7 @@
 import React from 'react'
 
-const Veiculos = () => {
+export const Veiculos = () => {
   return (
     <div>Veiculos</div>
   )
 }
-
-export default Veiculos

@@ -1,1 +1,8 @@
-{"objects": []}
+{"users": [
+    {
+        "id": 1,
+        "name": "Victor Abrahão",
+        "email": "victor.abrahao@example.com",
+        "password": "123456"
+    }
+]}
