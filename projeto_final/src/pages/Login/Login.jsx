@@ -1,6 +1,7 @@
 import { use, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { useAuth } from "../../hooks/useAuth"
+import styles from "./Login.module.css"
 
 export const Login = () => {
   const {login} = useAuth();
@@ -22,18 +23,18 @@ export const Login = () => {
   }
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className={styles.container}>
+      <form className={styles.form} onSubmit={handleSubmit}>
         <h1>LOGIN</h1>
-        {error && <p>{error}</p>}
+        {error && <p className={styles.error}>{error}</p>}
         <label>
           <span>DIGITE SEU EMAIL:</span>
           <input type="email" name="email" id="email" value= {email} onChange={(e)=> setEmail(e.target.value)} placeholder="Digite seu email"/>
-        </label><br />
+        </label>
         <label>
           <span>DIGITE SUA SENHA:</span>
           <input type="password" name="password" id="password" value={password} onChange={(e)=> setPassword(e.target.value)} placeholder="Digite sua senha"/>
-        </label><br />
+        </label>
         <button type="submit" onClick={handleSubmit}>ENTRAR</button>
       </form>
     </div>

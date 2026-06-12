@@ -1,8 +1,29 @@
 {"users": [
-    {
-        "id": 1,
-        "name": "Victor Abrahão",
-        "email": "victor.abrahao@example.com",
-        "password": "123456"
-    }
-]}
+        {
+            "id": 1,
+            "name": "Victor Abrahão",
+            "email": "victor.abrahao@example.com",
+            "password": "123456"
+        }
+    ],
+    "motos":[
+        {
+            "id": 1,
+            "marca": "Royal Enfield",
+            "modelo": "Hunter 350",
+            "cilindrada": 350,
+            "ano": 2024,
+            "preco": 25000,
+            "imagem": "https://www.royalenfield.com/content/dam/royal-enfield/india/global/vehicles/hunter-350/hero/Hunter-350-hero.png"
+        }
+    ],
+    "veiculos":[
+        {
+            "id": 1,
+            "marca": "Toyota",
+            "modelo": "Corolla",
+            "ano": 2020,
+            "preco": 90000
+        }
+    ]
+}
